@@ -75,13 +75,18 @@ input.on "keyup", ->
   print @value
 ```
 
-#### Focusing the input via code
+#### Focusing and Blurring the input via code
 
 Imagine that you want to focus the input once you click "myButton", here is an example:
 
 ```coffeescript
 myButton.on Events.Click, ->
   input.focus()
+```
+To remove focus from the input field (fire a `blur` event), invoke `input.blur()` on the input object.
+
+```coffeescript
+input.input.blur()
 ```
 
 #### Focus and Blur events
